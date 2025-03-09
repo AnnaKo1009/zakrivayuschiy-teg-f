@@ -68,6 +68,7 @@
   font-family: var( --main-font-family);
   font-weight: var(--card-title-font-weight, 700);
   font-size: 18px;
+  font-variation-settings: "wght" var(--card-title-font-weight, 700);
   line-height: 21.78px;
   padding: 3px 10px;
 }
@@ -221,22 +222,6 @@
 .button:hover::before {
   transform: scaleX(1);
 }
-/* .button::before {
-  content: "";
-  background: var(--text-color, black);
-  transition: transform 0.5s ease-in-out;
-  transform: scaleX(0);
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  transform-origin: left;
-  inline-size: 100%;
-  block-size: 100%;
-}
-
-.button:hover::before {
-  transform: scaleX(1);
-} */
 
 .icon-floppy {
   inline-size: 21px;
@@ -309,7 +294,7 @@
     inline-size: 100%;
   }
 
-  .save-button { 
+  .save-button {
     flex-direction: column;
   }
 

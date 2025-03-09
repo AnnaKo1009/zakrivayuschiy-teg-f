@@ -53,7 +53,6 @@
     opacity: 0;
 }
 
-/* hover */
 
 .like-icon:hover .core {
     fill: var(--heart-contour-color, black);
@@ -65,7 +64,6 @@
     transition: fill 0.3s 0.05s linear;
 }
 
-/* active */
 
 .like-icon:active .core {
     fill: var(--heart-sparks-color, red);
@@ -77,7 +75,6 @@
     transition: fill 0.3s 0.05s linear;
 }
 
-/* is liked */
 
 .like-icon.is-liked .core {
     fill: var(--heart-sparks-color, red);
