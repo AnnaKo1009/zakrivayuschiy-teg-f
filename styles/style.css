@@ -299,6 +299,9 @@
 
   .save-button {
     flex-direction: column;
+    max-block-size: 84px;
+    gap: 6px;
+    padding: 18px 21px 15px 19px;
   }
 
   .icon-floppy {
@@ -310,12 +313,5 @@
     max-inline-size: 341px;
     padding: 30px 42px;
   }
-
-   .save-button {
-    max-block-size: 84px;
-    gap: 6px;
-    padding: 18px 21px 15px 19px;
-   }
-
 
 }
