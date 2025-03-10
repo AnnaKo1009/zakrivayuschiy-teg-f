@@ -27,7 +27,7 @@
 .header {
   display: grid;
   justify-items: center;
-  font-family: var(--accent-font-family, 'PressStart2P', monospace);
+  font-family: var(--accent-font-family, 'PressStart2P', fantasy);
   text-transform: uppercase;
   line-height: normal;
   padding-block: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
@@ -59,7 +59,7 @@
 
 .card {
   border: 2px solid #000000;
-  max-inline-size: 696px;
+  max-inline-size: 700px;
   background: var(--bg-color, white);
 }
 
@@ -69,6 +69,7 @@
   font-variation-settings: "wght" var(--card-title-font-weight, 700);
   line-height: 21.78px;
   padding: 3px 10px;
+  border-block-end: 2px solid var(--text-color, black);
 }
 
 .image-section {
@@ -82,6 +83,7 @@
   object-position: center;
   inline-size: 100%;
   aspect-ratio: 1 / 1;
+  max-block-size: 696px;
 }
 
 .image-label {
@@ -132,16 +134,17 @@
 
 .text-section {
   display: grid;
-  gap: 27px;
+  gap: 25px;
   font-size: 18px;
   line-height: 21px;
-  padding: 25px;
+  padding: 25px 25px 0 25px;
+  border-block-start: 2px solid var(--text-color, black);
 }
 
 .buttons-section {
   display: flex;
   justify-content: end;
-  gap: 6px;
+  gap:3px;
   padding: 25px;
 }
 
@@ -160,7 +163,7 @@
 }
 
 .button__text {
-  font-family: var( --accent-font-family), 'PressStart2P', monospace;
+  font-family: var( --accent-font-family), 'PressStart2P', fantasy;
   font-size: 14px;
   line-height: 12.6px;
   color: var(--button-text-color, #fff);
@@ -191,9 +194,10 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   padding: 18px 21px 18px 19px;
-  margin-block: 52px 103px;
+  margin-block: 50px 103px;
+  max-block-size: 55px;
 }
 
 .button:focus {
@@ -229,8 +233,9 @@
 }
 
 .dialog {
-  padding: 31.5px 32.5px 30.5px 31.5px;
-  font-family: var(--accent-font-family), "PressStart2P", monospace;
+  /* padding: 31.5px 32.5px 30.5px 31.5px; */
+  padding: 30px;
+  font-family: var(--accent-font-family), "PressStart2P", fantasy;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
@@ -250,7 +255,7 @@
 
 .dialog-content {
   display: flex;
-  gap: 12px;
+  gap: 16px;
   align-items: center;
 }
 
@@ -278,8 +283,8 @@
     (text-stroke: 1px var(--bg-color, #fff))) {
   .image-label {
     text-shadow: none;
-    text-stroke: 1px var(----bg-color, #fff);
-    -webkit-text-stroke: 1px var(----bg-color, #fff);
+    text-stroke: 1px var(--bg-color, #fff);
+    -webkit-text-stroke: 1px var(--bg-color, #fff);
   }
 }
 
@@ -305,4 +310,12 @@
     max-inline-size: 341px;
     padding: 30px 42px;
   }
+
+   .save-button {
+    max-block-size: 84px;
+    gap: 6px;
+    padding: 18px 21px 15px 19px;
+   }
+
+
 }
